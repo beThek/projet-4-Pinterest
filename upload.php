@@ -59,8 +59,8 @@ if($taille>$taille_maxi)
 }
 
 
-print_r = $dossier
-print_r = $fichier
+print_r = ($dossier);
+print_r = ($fichier);
 
 
  ?>
