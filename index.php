@@ -5,7 +5,7 @@
         <title></title>
     </head>
     <body>
-        <form action="index.php" method="post" enctype="multipart/form-data">
+        <form action="upload.php" method="post" enctype="multipart/form-data">
             <input type="file" name"yourimage">
             <input type="hidden" name="MAX_FILE_SIZE" value="100000"> <!--100Ko max-->
             <input type="submit" name="envoyer" value="Envoyer le fichier"
