@@ -9,12 +9,16 @@
  Un code d'erreur si besoin 	$_FILES['avatar']['error']
 */
 
+$dossier = 'upload/';
+$fichier = basename ($_FILES['yourimage'] ['name']);
+
+
 
 if(isset ($_FILES['yourimage']))
  {
     # code..
-    $dossier = 'upload/';
-    $fichier = basename ($_FILES['yourimage'] ['name']);
+
+
     if(move_uploaded_file($_FILES['yourimage'] ['tmp_name'], $dossier . $fichier)) // si fonction renvoie TRUE alors OK
 
     {
@@ -53,5 +57,8 @@ if($taille>$taille_maxi)
 {
      $erreur = 'Le fichier est trop gros...';
 }
+
+
+
 
  ?>
