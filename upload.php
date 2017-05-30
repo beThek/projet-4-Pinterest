@@ -61,6 +61,8 @@ if($taille>$taille_maxi)
 
 print_r ($dossier);
 print_r ($fichier);
-
-
+print_r ($erreur);
+print_r ($taille_maxi);
+print_r ($taille);
+print_r ($erreur);
  ?>
