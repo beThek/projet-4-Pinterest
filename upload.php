@@ -30,7 +30,7 @@ if(isset($_FILES['avatar'])){
 
 
     //TEST IMAGE SIZE>500000
-    if($_FILES['avatar']['size']>500000)
+    if($_FILES['avatar']['size']>2000000)
         {
         echo "Sorry, your file is too large";
         }
@@ -49,6 +49,25 @@ if(isset($_FILES['avatar'])){
 
 }
 
+    require 'src/claviska/SimpleImage.php';
+
+    try {
+  // Create a new SimpleImage object
+  $image = new \claviska\SimpleImage();
+
+  // Magic! ✨
+  $image->fromFile($fichier_cible); // load image.jpg
+
+  $image->resize(320, 200); // resize to 320x200 pixels
+
+  $image->toFile('new-image.png', 'image/png'); // convert to PNG and save a copy to new-image
+
+
+  // And much more! 💪
+} catch(Exception $err) {
+  // Handle errors
+  echo $err->getMessage();
+}
 
 
 ?>
