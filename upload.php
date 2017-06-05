@@ -30,7 +30,7 @@ if(isset($_FILES['avatar'])){
 
 
     //TEST IMAGE SIZE>500000
-    if($_FILES['avatar']['size']>2000000)
+    if($_FILES['avatar']['size']>200000)
         {
         echo "Sorry, your file is too large";
         }
