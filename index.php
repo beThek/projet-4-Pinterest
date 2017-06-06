@@ -6,25 +6,37 @@
         <link rel="stylesheet" type="text/css" href="css/normalize.css">
         <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>projet-4-Pinterest</title>
     </head>
 
     <body>
-        <header>
+
+        <header class>
             <h1>My First PHP Uploader</h1>
         </header>
+
+<div class="container">
+    <div class="row">
+        <div class="item">
+            <div class="well">
+
+
+
+
 
 
         <form method="POST" action="upload.php" enctype="multipart/form-data">
 
             <input type="file" name="avatar"/>
-            <input type="submit" class="btn btn-primary" value="SEND"></input>
+            <input type="submit" value="SEND"></input>
 
         </form>
 
 
 
-        <div class="grid" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 160 }'>
+        <div class="grid" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 200 }'>
 <?php
 
         $dossier_cible = 'upload/';
@@ -44,20 +56,15 @@
         }
 ?>
 
-
-
-
-
-
-
-
-
-
-            </div>
-
-
-
+        </div>
         <script src="/projet-4-Pinterest/js/masonry.pkgd.js"></script>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
 
     </body>
 </html>
