@@ -31,7 +31,7 @@ if(isset($_FILES['avatar'])){
     //TEST IMAGE SIZE>500000
     if($_FILES['avatar']['size']>200000)
         {
-        echo "Sorry, your file is too large";
+         //code.....
         }
 
     //SI TEEST OK alors MOVE IN UPLOAD LOCAL FOLDER
